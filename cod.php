@@ -2,7 +2,8 @@
 require_once 'Pembayaran.php';
 require_once 'Cetak.php';
 
-class COD extends Pembayaran implements Cetak {
+# Penggunaan Class COD
+class cod extends Pembayaran implements Cetak {
 
     public function prosesPembayaran() {
         if ($this->validasi()) {
@@ -15,3 +16,4 @@ class COD extends Pembayaran implements Cetak {
         return "Struk COD: Rp {$this->jumlah}";
     }
 }
+?>
